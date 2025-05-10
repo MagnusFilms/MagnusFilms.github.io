@@ -11,3 +11,8 @@ body {
   float: left;
   width: 10%;
 }
+.author {
+  float: left;
+  font-size: 14px;
+  padding-left: 10px;
+}
