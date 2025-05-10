@@ -18,7 +18,7 @@ body {
 .author-box {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 /* Author image */
