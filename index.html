@@ -48,5 +48,25 @@
     <button class="carousel-btn next">&#10095;</button>
   </div>
 </section>
+<div>
+  <script>
+  const track = document.querySelector('.carousel-track');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+
+  let scrollAmount = 0;
+  const scrollStep = 235; // width of item + padding/gap
+
+  nextBtn.addEventListener('click', () => {
+    scrollAmount += scrollStep;
+    track.style.transform = `translateX(-${scrollAmount}px)`;
+  });
+
+  prevBtn.addEventListener('click', () => {
+    scrollAmount = Math.max(0, scrollAmount - scrollStep);
+    track.style.transform = `translateX(-${scrollAmount}px)`;
+  });
+</script>
+</div>
 </body>
 </html>
