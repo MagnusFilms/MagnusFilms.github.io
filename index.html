@@ -56,21 +56,33 @@
 <div>
   <script>
   const track = document.querySelector('.carousel-track');
+  const items = document.querySelectorAll('.carousel-item');
   const prevBtn = document.querySelector('.carousel-btn.prev');
   const nextBtn = document.querySelector('.carousel-btn.next');
 
-  let scrollAmount = 0;
-  const scrollStep = 235; // width of item + padding/gap
+  const itemWidth = items[0].offsetWidth + 15; // Width + gap
+  let index = 0;
+
+  function updateCarousel() {
+    const offset = index * itemWidth;
+    track.style.transform = `translateX(-${offset}px)`;
+  }
 
   nextBtn.addEventListener('click', () => {
-    scrollAmount += scrollStep;
-    track.style.transform = `translateX(-${scrollAmount}px)`;
+    index = (index + 1) % items.length; // loop forward
+    updateCarousel();
   });
 
   prevBtn.addEventListener('click', () => {
-    scrollAmount = Math.max(0, scrollAmount - scrollStep);
-    track.style.transform = `translateX(-${scrollAmount}px)`;
+    index = (index - 1 + items.length) % items.length; // loop backward
+    updateCarousel();
   });
+
+  // Optional: Autoplay every 5s
+  // setInterval(() => {
+  //   index = (index + 1) % items.length;
+  //   updateCarousel();
+  // }, 5000);
 </script>
 </div>
 </body>
