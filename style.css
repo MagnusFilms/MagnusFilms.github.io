@@ -65,3 +65,85 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
 }
+
+/* Carousel stuffs */
+.carousel-section {
+  margin-top: 50px;
+}
+
+.carousel-heading {
+  font-family: 'Georgia', serif;
+  color: #ffcc00;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #000;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #121212;
+  border: 2px solid #444;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
+  padding: 10px 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.5s ease;
+  padding: 0 10px;
+}
+
+.carousel-item {
+  min-width: 220px;
+  background: linear-gradient(#2a2a2a, #1a1a1a);
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 15px;
+  color: #e0e0d6;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.1);
+  flex: 0 0 auto;
+}
+
+.carousel-item h3 {
+  color: #ffcc00;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.carousel-item p {
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(30, 30, 30, 0.9);
+  border: none;
+  color: #ffcc00;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 8px 12px;
+  z-index: 2;
+  transition: background-color 0.2s;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+.carousel-btn.prev {
+  left: 5px;
+}
+
+.carousel-btn.next {
+  right: 5px;
+}
