@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-  font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman';
   width: 90%;
   margin: auto;
   max-width: 80ch;
@@ -72,7 +72,7 @@ body {
 }
 
 .carousel-heading {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Times New Roman';
   color: #1ae2f6;
   font-size: 1.8em;
   text-align: center;
@@ -143,7 +143,7 @@ body {
   border-radius: 6px;
   padding: 10px;
   color: #e0e0d6;
-  font-family: 'Georgia', serif;
+  font-family: 'Times New Roman';
   box-shadow: 0 0 6px rgba(255, 204, 0, 0.1);
   flex: 0 0 auto;
   text-align: center;
