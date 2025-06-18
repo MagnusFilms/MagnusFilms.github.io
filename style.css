@@ -156,7 +156,8 @@ body {
   overflow: hidden;
 }
 
-.nav-buttons {
+.nav-buttons a {
+  float: left;
   color: #121212;
   text-align: center;
   padding: 14px 16px;
