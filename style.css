@@ -169,9 +169,3 @@ body {
   background-color: #1ae2f6;
   color: black;
 }
-
-/* Add a color to the active/current link */
-.nav-buttons {
-  background-color: #04AA6D;
-  color: white;
-}
