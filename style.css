@@ -169,6 +169,11 @@ body {
 }
 
 .nav-buttons a:hover {
+  background-color: #575757;
+  color: white;
+}
+
+.nav-buttons a.active {
   background-color: #1ae2f6;
   color: black;
 }
