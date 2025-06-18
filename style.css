@@ -1,4 +1,3 @@
-/* General body styling */
 body {
   font-family: 'Times New Roman';
   width: 90%;
@@ -10,7 +9,6 @@ body {
   padding: 20px;
 }
 
-/* Top section layout */
 .top {
   margin-bottom: 30px;
 }
@@ -21,7 +19,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* Author image */
 .au-img {
   width: 50px;
   height: 50px;
@@ -31,7 +28,6 @@ body {
   border: 2px solid #555;
 }
 
-/* Author text */
 .author {
   font-size: 14px;
   padding-top: 15px;
@@ -39,7 +35,6 @@ body {
   font-style: italic;
 }
 
-/* Main title */
 .title {
   clear: both;
   font-size: 2.2em;
@@ -47,7 +42,6 @@ body {
   color: #1ae2f6;
 }
 
-/* Subtitle or motto */
 .motto {
   font-style: italic;
   color: #bbbbbb;
@@ -55,8 +49,7 @@ body {
   font-size: 1.2em;
 }
 
-/* Opening paragraph */
-.opening-statement {
+.opening-statement .why {
   font-size: 1em;
   color: #e0e0e0;
   background-color: #2a2a2a;
@@ -66,7 +59,6 @@ body {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
 }
 
-/* Carousel stuffs */
 .carousel-section {
   margin-top: 50px;
 }
