@@ -78,9 +78,9 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: #121212;
-  border: 2px solid #444;
+  border: 2px solid #1ae2f6;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(26, 226, 246, 0.1);
+  box-shadow: 0 0 10px rgba(26, 226, 246);
   padding: 10px 0;
 }
 
